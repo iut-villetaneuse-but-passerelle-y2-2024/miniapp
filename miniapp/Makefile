@@ -1,2 +1,2 @@
 run:
-	( . venv/bin/activate && flask --app app run --debug )
+	( . venv/bin/activate && flask --app app run --debug --reload )

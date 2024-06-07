@@ -100,6 +100,9 @@ def new_event_form():
         db.session.commit()
         return redirect(url_for("handle_single_event", id=event.id))
 
+@app.route("/error")
+def error_route():
+    raise Exception("^_^")
 
 @app.route("/events", methods=["GET", "POST"])
 def handle_events():
